@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "0bda8576-5271-4310-a1a0-03800231d6cb",
+		"name": "Student_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18250716"
+	},
+	"item": [
+		{
+			"name": "Get All Students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/system/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"system",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Student by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/system/student?id=?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"system",
+						"student"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "?"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"fullName\": \"Mahmoud\",\n    \"phone\": \"01545568654\",\n    \"age\": \"25\",\n    \"address\": \"sharqia\"\n}\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/system/saveSt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"system",
+						"saveSt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Students",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"fullName\": \"Ahmed\",\n        \"phone\": \"01010599663\",\n        \"age\": \"26\",\n        \"address\": \"sharqia\"\n    },\n    {\n        \"fullName\": \"Moaz\",\n        \"phone\": \"01119999654\",\n        \"age\": \"24\",\n        \"address\": \"Giza\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/system/saveStudents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"system",
+						"saveStudents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/system/64",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"system",
+						"64"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"fullName\": \"Abdullah\",\n    \"phone\": \"01559666798\",\n    \"age\": \"26\",\n    \"address\": \"sharqia\",\n    \"dateCreated\": \"2022-06-29T07:01:17.271+00:00\",\n    \"dateUpdated\": \"2022-06-29T07:01:17.271+00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/system",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"system"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
