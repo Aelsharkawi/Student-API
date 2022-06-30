@@ -12,12 +12,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/system/students",
+					"raw": "http://localhost:8090/system/students",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8090",
 					"path": [
 						"system",
 						"students"
@@ -39,12 +39,12 @@
 					"formdata": []
 				},
 				"url": {
-					"raw": "http://localhost:8080/system/student?id=?",
+					"raw": "http://localhost:8090/system/student?id=?",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8090",
 					"path": [
 						"system",
 						"student"
@@ -74,12 +74,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/system/saveSt",
+					"raw": "http://localhost:8090/system/saveSt",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8090",
 					"path": [
 						"system",
 						"saveSt"
@@ -103,12 +103,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/system/saveStudents",
+					"raw": "http://localhost:8090/system/saveStudents",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8090",
 					"path": [
 						"system",
 						"saveStudents"
@@ -123,12 +123,12 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/system/64",
+					"raw": "http://localhost:8090/system/64",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8090",
 					"path": [
 						"system",
 						"64"
@@ -152,12 +152,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/system",
+					"raw": "http://localhost:8090/system",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8090",
 					"path": [
 						"system"
 					]
