@@ -20,36 +20,46 @@ public class StudentController {
         this.studentServices = studentServices;
     }
 
+
+    //end point to show all students
     @GetMapping("students")
     public List<Student> getStudents() {
         return studentServices.getStudents();
     }
 
+    //end points to student by id
     // http://localhost:8080/system/student?id=12
     @GetMapping("student")
     public Student getStudentById (@RequestParam Long id){
         return studentServices.getStudentById(id);
     }
 
+    // end point to save student
     @PostMapping("saveSt")
-    public void saveStudent(@RequestBody Student student){
+    public Student saveStudent(@RequestBody Student student){
          studentServices.saveStudent(student);
+         return student;
     }
 
+    // end point to save a students list
     @PostMapping("saveStudents")
     public void saveStudents(@RequestBody List<Student> students) {
         studentServices.saveStudents(students);
     }
-    @DeleteMapping("{deleteId}")
-    public void deleteByID(@PathVariable("deleteId") Long id) {
+
+    //end point to delete student by id
+    @DeleteMapping("deleteId")
+    public void deleteByID(@RequestParam Long id) {
         studentServices.deleteById(id);
     }
 
-    @PutMapping
+    // end point to update student
+    @PutMapping("update")
     public Student updateStudent(@RequestBody Student student)
     {
         studentServices.updateStudent(student);
         return student;
     }
+
 
 }

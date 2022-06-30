@@ -123,7 +123,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8090/system/64",
+					"raw": "http://localhost:8090/system/deleteId",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -152,7 +152,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8090/system",
+					"raw": "http://localhost:8090/system/update",
 					"protocol": "http",
 					"host": [
 						"localhost"

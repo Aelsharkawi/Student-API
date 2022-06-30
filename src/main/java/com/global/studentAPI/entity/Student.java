@@ -6,16 +6,20 @@ import org.hibernate.annotations.UpdateTimestamp;
 import javax.persistence.*;
 import java.util.*;
 
+// use lombok
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+// to make this class table in database
 @Entity(name = "student")
 @Table
 public class Student {
 
-    @Id
+
+    @Id   //to make id a pk in database
     @SequenceGenerator(
+            // to make id auto increment
             name = "Student_sequence",
             sequenceName = "student_sequence",
             allocationSize = 1
@@ -29,10 +33,6 @@ public class Student {
 
     @Column(name = "full_name")
     private String fullName;
-
-//    @Enumerated(EnumType.STRING)
-//    @Column(name = "gender")
-//    private Gender gender;
 
     @Column(name = "phone_number")
     private String phone;

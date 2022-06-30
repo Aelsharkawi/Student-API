@@ -18,25 +18,33 @@ public class StudentServices {
         this.studentRepository = studentRepository;
     }
 
+    // service to get students list
     public List<Student> getStudents()
     {
         return studentRepository.findAll();
     }
+
+    // service to get student by id
     public Student getStudentById (Long id){
         return studentRepository.findById(id).get();
     }
 
+    //service to save student
     public void saveStudent(Student student) {
         studentRepository.save(student);
     }
+
+    //service to save students list
     public void saveStudents(List<Student> students) {
         studentRepository.saveAll(students);
     }
 
+    // service to delete student by id
     public void deleteById(Long id) {
         studentRepository.deleteById(id);
     }
 
+    //service to update student info
     public void updateStudent(Student student) {
         studentRepository.save(student);
     }
